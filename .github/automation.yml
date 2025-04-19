@@ -1,0 +1,13 @@
+name: Automation
+on:
+  push:
+  workflow_dispatch:
+  branches:
+    - master
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print Hello World
+      run: echo "Hello World"
